@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.droidslot.DroidSlotActivity">
+
+    <ImageView
+        android:id="@+id/droidimageid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/slotbuttonid1"
+        android:layout_alignEnd="@+id/slotbuttonid1"
+        android:layout_alignRight="@+id/slotbuttonid1"
+        android:layout_alignLeft="@+id/slotbuttonid1"
+        android:layout_alignParentTop="true"
+        android:layout_toLightOf="@+id/droidimageid2"
+
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/star" />
+
+    <Button
+        android:id="@+id/slotbuttonid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="・"
+        android:layout_alignBaseline="@+id/slotbuttonid2"
+        android:layout_alignBottom="@+id/slotbuttonid2"
+        android:layout_toLeftOf="@+id/slotbuttonid2"
+        android:layout_toStartOf="@+id/slotbuttonid2" />
+
+    <ImageView
+        android:id="@+id/droidimageid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/slotbuttonid2"
+        android:layout_alignEnd="@+id/slotbuttonid2"
+        android:layout_alignRight="@+id/slotbuttonid2"
+        android:layout_alignLeft="@+id/slotbuttonid2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/star" />
+
+    <Button
+        android:id="@+id/slotbuttonid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="・"
+        android:layout_below="@+id/droidimageid2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/droidimageid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/slotbuttonid3"
+        android:layout_alignEnd="@+id/slotbuttonid3"
+        android:layout_alignRight="@+id/slotbuttonid3"
+        android:layout_alignLeft="@+id/slotbuttonid3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/droidimageid2"
+        app:srcCompat="@drawable/star"/>
+
+    <Button
+        android:id="@+id/slotbuttonid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/slotbuttonid2"
+        android:layout_alignBottom="@+id/slotbuttonid2"
+        android:layout_toRightOf="@+id/droidimageid2"
+        android:text="・"/>
+    <Button
+        android:id="@+id/retrybotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="もう一回"
+        android:layout_below="@+id/slotbuttonid2"
+        android:layout_toRightOf="@+id/slotbuttonid1" />
+</RelativeLayout>
